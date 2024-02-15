@@ -1,0 +1,295 @@
+
+.line1 {
+
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 25px;
+    margin-top: -15px;
+    align-self: flex-end;
+}
+
+.line1Email {
+
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 25px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    align-self: center;
+}
+
+.text {
+    margin-left: 20px;
+
+}
+
+.img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid #d9d6d6;
+    margin-top: -60px;
+    object-fit: cover;
+}
+
+.box {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: -50px;
+
+
+}
+
+.boxImg {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.line {
+    background-color: #d3d0d0;
+    height: 300px;
+    width: 1.5px;
+    margin-left: 50px;
+    border-radius: 5px;
+
+}
+
+.boxInfo {
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+}
+
+.line2 {
+
+    background-color: #d3d0d0;
+    height: 1.5px;
+    width: 300px;
+    margin-left: 50px;
+    margin-left: -1px;
+    margin-top: 50px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.boxButton {
+
+    margin-top: 90px;
+    align-self: flex-start;
+}
+
+.boxAll {
+    display: flex;
+
+}
+
+.saveButton {
+
+
+    align-self: flex-end;
+    transform: translate(-350px, -70px);
+}
+
+.box1 {
+
+    margin-left: 50px;
+
+}
+
+.button {
+
+
+    self-align: center;
+    margin-top: 100px;
+
+
+}
+
+@media screen and (max-width: 820px) {
+    .line1Email {
+
+        font-size: 16px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-left: 25px;
+        margin-top: 5px;
+        align-self: center;
+    }
+
+    .box {
+
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+
+    }
+
+    .boxAll {
+
+        width: 100vw;
+
+    }
+
+    .line {
+
+        display: none;
+
+    }
+
+    .text {
+
+        font-size: 17px;
+
+    }
+
+    .text1 {
+        display: none;
+    }
+
+    .boxInfo {
+
+        margin-top: 20px;
+        margin-left: -40px;
+
+
+    }
+
+    .line1 {
+
+        font-size: 16px;
+        margin-left: 10px;
+        margin-top: 0px;
+
+    }
+
+    .line2 {
+
+        margin-bottom: 20px;
+        margin-top: -10px;
+        width: 40vw;
+        min-width: 230px;
+        margin-left: 15px;
+    }
+
+    .img {
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        border: 2px solid #d9d6d6;
+        margin-top: -70px;
+        object-fit: cover;
+    }
+
+    .box1 {
+
+        margin-left: 20px;
+
+    }
+
+    .saveButton {
+
+        transform: translate(0px, 0px);
+        align-self: center;
+        margin-bottom: 50px;
+        margin-top: -60px;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .line1Email {
+
+        font-size: 19px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-left: 25px;
+        margin-top: 5px;
+        align-self: center;
+    }
+
+    .img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: 2px solid #d9d6d6;
+        margin-top: -60px;
+        object-fit: cover;
+        align-self: center;
+    }
+
+    .saveButton {
+
+
+        transform: translate(0px, 0px);
+        align-self: center;
+
+    }
+
+    .line2 {
+
+        display: none;
+    }
+
+    .line1 {
+        font-size: 15px;
+        margin-left: 0px;
+        margin-top: 0px;
+
+
+    }
+
+    .box {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: flex-start;
+        margin-top: 80px;
+        width: 100vw;
+
+
+    }
+
+    .boxImg {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-bottom: 20px;
+
+
+    }
+
+    .boxAll {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-self: center;
+
+
+    }
+
+    .boxInfo {
+
+        margin-top: 0px;
+        margin-left: 0px;
+
+
+    }
+
+
+}

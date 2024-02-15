@@ -1,0 +1,28 @@
+.input {
+    width: 200px;
+}
+
+@media screen and (max-width: 930px) {
+    .input {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 895px) {
+    .input {
+        width: 145px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .input {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .input {
+        width: 170px;
+        height: 40px;
+    }
+}
