@@ -2,7 +2,6 @@
     font-size: 27px;
     font-weight: 700;
 }
-
 .button {
     margin-top: 20px;
     border-radius: 10px;
@@ -10,24 +9,17 @@
     width: 80px;
     border: none;
     color: #464645;
-
 }
-
 .button:hover {
     background: antiquewhite;
 }
-
 .line1 {
-
     width: 120px;
     height: 3px;
     background: # #377DFF;
     transition: all 0.3s ease-in;
-
 }
-
 .line2 {
-
     width: 52px;
     height: 3px;
     background: #2a89d9;
@@ -35,18 +27,14 @@
     transition: all 0.3s ease-in;
     display: block;
 }
-
 .line3 {
-
     width: 52px;
     height: 3px;
     background: rgba(5, 178, 105, 0.91);
     border-radius: 10px;
     transition: all 0.3s ease-in;
     display: block;
-
 }
-
 .box {
     display: none;
     flex-direction: row;
@@ -54,35 +42,23 @@
     align-items: center;
     margin-left: -25px;
     margin-bottom: 5px;
-
-
 }
-
 .img {
-
     height: 25px;
     width: 25px;
     display: block;
     margin-right: -25px;
     margin-top: 15px;
 }
-
-
 .boxFlex {
     display: flex;
     justify-content: center;
-
-
 }
-
 .imgBox {
-
-
 }
 @media screen and (max-width: 500px) {
     .header {
         font-size: 20px;
     }
-
 }
 

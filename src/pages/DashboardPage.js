@@ -1,16 +1,13 @@
 import MainLayout from "../MainLayout";
 import AuthDetails from "../components/AuthDetails/AuthDetails";
+import SEO from "../components/SEO/SEO";
 
-
-const DashboardPage =()=> {
-   return (
+const DashboardPage = () => {
+  return (
     <MainLayout>
-
-        <AuthDetails/>
-
+      <SEO title="Dashboard" description="Information about User" />
+      <AuthDetails />
     </MainLayout>
-
-   )
-
-}
-export default DashboardPage
+  );
+};
+export default DashboardPage;

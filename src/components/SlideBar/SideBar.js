@@ -15,6 +15,7 @@ import {useNavigate} from "react-router-dom";
 import ListIcon from '@mui/icons-material/List';
 import {Drawer} from "@mui/material";
 import {useSelector} from "react-redux";
+import GroupIcon from '@mui/icons-material/Group';
 
 export default function SideBar() {
 
@@ -55,7 +56,6 @@ export default function SideBar() {
             <List>
                 <ListItem>
 
-
                     <ListItemButton onClick={() => navigate('/dashboard')}>
                         <DashboardIcon></DashboardIcon>
                         <ListItemText
@@ -67,6 +67,7 @@ export default function SideBar() {
                     </ListItemButton>
 
                 </ListItem>
+
                 <ListItem>
                     <ListItemButton onClick={() => navigate('/settings')}>
                         <SettingsIcon>
@@ -81,6 +82,39 @@ export default function SideBar() {
                     </ListItemButton>
 
                 </ListItem>
+
+
+                <ListItem>
+                    <ListItemButton onClick={() => navigate('/allUsers')}>
+                        <GroupIcon>
+
+                        </GroupIcon>
+                        <ListItemText
+                            primaryTypographyProps={{
+                                marginLeft: '7px',
+                                fontSize: '14px',
+                            }}
+                            primary={'All Users'}/>
+                    </ListItemButton>
+
+                </ListItem>
+
+
+                {/*<ListItem>*/}
+                {/*    <ListItemButton onClick={() => navigate('/searchUser')}>*/}
+                {/*        <PersonSearchIcon>*/}
+
+                {/*        </PersonSearchIcon>*/}
+                {/*        <ListItemText*/}
+                {/*            primaryTypographyProps={{*/}
+                {/*                marginLeft: '7px',*/}
+                {/*                fontSize: '14px',*/}
+                {/*            }}*/}
+                {/*            primary={'Search User'}/>*/}
+                {/*    </ListItemButton>*/}
+
+                {/*</ListItem>*/}
+
                 <ListItem>
                     <ListItemButton onClick={userSignOut}>
                         <LogoutIcon></LogoutIcon>
@@ -93,7 +127,6 @@ export default function SideBar() {
 
                 </ListItem>
             </List>
-
         </Box>
     );
 
@@ -130,6 +163,7 @@ export default function SideBar() {
                     </ListItemButton>
 
                 </ListItem>
+
                 <ListItem>
                     <ListItemButton onClick={() => navigate('/settings')}>
                         <SettingsIcon>
@@ -143,6 +177,36 @@ export default function SideBar() {
                             primary={'Edit settings'}/>
                     </ListItemButton>
                 </ListItem>
+
+                <ListItem>
+                    <ListItemButton onClick={() => navigate('/allUsers')}>
+                        <GroupIcon>
+
+                        </GroupIcon>
+                        <ListItemText
+                            primaryTypographyProps={{
+                                marginLeft: '7px',
+                                fontSize: '17px',
+                            }}
+                            primary={'All Users'}/>
+                    </ListItemButton>
+                </ListItem>
+
+                {/*<ListItem>*/}
+                {/*    <ListItemButton onClick={() => navigate('/searchUser')}>*/}
+                {/*        <PersonSearchIcon>*/}
+
+                {/*        </PersonSearchIcon>*/}
+                {/*        <ListItemText*/}
+                {/*            primaryTypographyProps={{*/}
+                {/*                marginLeft: '7px',*/}
+                {/*                fontSize: '17px',*/}
+                {/*            }}*/}
+                {/*            primary={'Search User'}/>*/}
+                {/*    </ListItemButton>*/}
+                {/*</ListItem>*/}
+
+
                 <ListItem>
                     <ListItemButton onClick={userSignOut}>
                         <LogoutIcon></LogoutIcon>

@@ -3,7 +3,7 @@ import { db } from "../../firebase";
 import { onValue, ref } from "firebase/database";
 import s from "./AuthDetails.module.css";
 import useIsUser from "../customHook";
-import { setUserInfo } from "../../redux/User/slice";
+import { setAllUsers, setUserId, setUserInfo } from "../../redux/User/slice";
 import { useDispatch } from "react-redux";
 
 const AuthDetails = () => {
@@ -12,17 +12,24 @@ const AuthDetails = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
+    dispatch(setUserId(user?.uid));
     const dataRef = ref(db, "/users");
-
     onValue(dataRef, (snapshot) => {
       const data = snapshot.val();
+      const allUsers1 = Object.values(data);
 
       if (data != null) {
+        const keys = Object.keys(data);
+        for (let i = 0; i < allUsers1.length; i++) {
+          allUsers1[i].id = keys[i];
+        }
         const activeUser = Object.values(data).find(
           ({ email }) => email === user?.email,
         );
         setActiveUser(activeUser);
         dispatch(setUserInfo(activeUser));
+        dispatch(setAllUsers(allUsers1));
+        dispatch(setUserId(user?.uid));
       }
     });
   }, [user]);
@@ -48,7 +55,7 @@ const AuthDetails = () => {
 
             <div className={s.line1}>
               <h5>Surname </h5>{" "}
-              <p className={s.text}>{activeUser?.surname || "-"}</p>
+              <p className={s.text}>{activeUser.surname || "-"}</p>
             </div>
 
             <div className={s.line1}>

@@ -1,0 +1,106 @@
+
+.boxAll {
+    margin-bottom: 150px;
+}
+
+.search {
+}
+
+.loadMore {
+
+}
+
+.boxSearch {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
+    margin-bottom: 80px;
+    margin-left: 300px;
+}
+
+.buttonBox {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    width: 200px;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    width: 80vw;
+    margin-left: 250px;
+}
+
+.card {
+    margin: 30px;
+}
+
+@media screen and (max-width: 500px) {
+    .boxAll {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .boxSearch {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60vw;
+        margin-bottom: 80px;
+        margin-left: 300px;
+    }
+
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+        width: 70vw;
+        margin-left: 250px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .boxSearch {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 60vw;
+        margin-bottom: 80px;
+        margin-left: 280px;
+    }
+
+    .search {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .boxSearch {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 60vw;
+        height: 200px;
+        margin-bottom: 80px;
+        margin-left: 50px;
+    }
+
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+        width: 70vw;
+        margin-left: 20px;
+    }
+}

@@ -4,9 +4,12 @@
     margin-right: 50px;
     height: 100vh;
     color: #f1eeee;
+    position: fixed;
+
 }
 
 .baxAll {
+
 }
 
 .listIcon {
